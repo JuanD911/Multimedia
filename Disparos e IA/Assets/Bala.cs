@@ -11,8 +11,15 @@ public class Bala : MonoBehaviour
         Destroy (gameObject, 4f);
     }
     
-    private void OnCollisionEnter(Collision collision){
-        if(!collision.collider.CompareTag("Bala"));
-        Destroy (gameObject);
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.CompareTag("Enemy") || collision.collider.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Vida>().vida = collision.gameObject.GetComponent<Vida>().vida - bulletDamage;
+        }
+        if(collision.collider.CompareTag("Bala"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
