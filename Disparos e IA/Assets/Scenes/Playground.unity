@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 118550034}
   m_Layer: 8
   m_Name: Gun Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 153590458}
   m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 422459449}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 427470025}
   m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 968831767}
   m_Layer: 8
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 1208100646}
   m_Layer: 8
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1273,7 +1273,7 @@ GameObject:
   - component: {fileID: 1274101789}
   m_Layer: 8
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1315,6 +1315,8 @@ MonoBehaviour:
   "ca\xF1on": {fileID: 1497991068}
   bulletSpeed: 1000
   bulletDamage: 20
+  is_enemy: 1
+  tiempo_disparo: 2
 --- !u!1 &1303640134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,7 +1330,7 @@ GameObject:
   - component: {fileID: 1303640137}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1450,7 +1452,7 @@ GameObject:
   - component: {fileID: 1461233226}
   m_Layer: 8
   m_Name: Gun Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,7 +1535,7 @@ GameObject:
   - component: {fileID: 1497991070}
   m_Layer: 8
   m_Name: "Ca\xF1on"
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1615,7 +1617,7 @@ GameObject:
   - component: {fileID: 1516428988}
   m_Layer: 8
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1657,6 +1659,8 @@ MonoBehaviour:
   "ca\xF1on": {fileID: 1861120385}
   bulletSpeed: 1000
   bulletDamage: 20
+  is_enemy: 0
+  tiempo_disparo: 2
 --- !u!1 &1632379676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,7 +1674,7 @@ GameObject:
   - component: {fileID: 1632379678}
   m_Layer: 8
   m_Name: Barrel (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1818,7 +1822,7 @@ GameObject:
   - component: {fileID: 1861120388}
   m_Layer: 8
   m_Name: "Ca\xF1on"
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1901,7 +1905,7 @@ GameObject:
   - component: {fileID: 1878287008}
   m_Layer: 8
   m_Name: Barrel (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2122,7 +2126,7 @@ GameObject:
   - component: {fileID: 2001668798}
   m_Layer: 8
   m_Name: PlayerCameraRoot
-  m_TagString: CinemachineTarget
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

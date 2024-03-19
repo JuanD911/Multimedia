@@ -15,9 +15,11 @@ public class Bala : MonoBehaviour
     {
         if(collision.collider.CompareTag("Enemy") || collision.collider.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Vida>().vida = collision.gameObject.GetComponent<Vida>().vida - bulletDamage;
+            if(collision.gameObject.GetComponent<Vida>()==true){
+                collision.gameObject.GetComponent<Vida>().vida = collision.gameObject.GetComponent<Vida>().vida - bulletDamage;
+            }
         }
-        if(collision.collider.CompareTag("Bala"))
+        if(!collision.collider.CompareTag("Bala"))
         {
             Destroy(gameObject);
         }
